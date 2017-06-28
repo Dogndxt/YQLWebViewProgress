@@ -20,13 +20,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-d6-Iac">
+                                <rect key="frame" x="112.5" y="153.5" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.60129659349999998" green="0.59081890020000005" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4AZ-WN-643"/>
+                                    <constraint firstAttribute="width" constant="150" id="6Bf-TH-eru"/>
+                                </constraints>
+                                <state key="normal" title="有 Navigation Bar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="sEg-VE-b8G" kind="show" id="InX-WY-5Gr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lP-TY-o2h">
+                                <rect key="frame" x="112.5" y="353.5" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.46359850073584574" green="0.90196078430000004" blue="0.32443949942994943" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XHc-TQ-6iQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="YM0-ts-6H4"/>
+                                </constraints>
+                                <state key="normal" title="无 Navigation Bar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6WT-bQ-5gs" kind="show" id="6Pp-si-Kxn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yVV-d6-Iac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ek-Fg-wcg"/>
+                            <constraint firstItem="5lP-TY-o2h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C09-79-lHq"/>
+                            <constraint firstItem="5lP-TY-o2h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="UHY-r2-0tA"/>
+                            <constraint firstItem="yVV-d6-Iac" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="oyf-5p-T7a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQ3-2T-Gab"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="74"/>
+            <point key="canvasLocation" x="401" y="69"/>
+        </scene>
+        <!--Have Navigation Bar View Controller-->
+        <scene sceneID="F7q-UM-qCv">
+            <objects>
+                <viewController id="sEg-VE-b8G" customClass="HaveNavigationBarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rQp-8b-JUr"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ua-3m-MsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6oC-Ub-eOh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8us-2K-8uX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="-437"/>
+        </scene>
+        <!--None Navigation Bar View Controller-->
+        <scene sceneID="D7k-Pi-ZAB">
+            <objects>
+                <viewController id="6WT-bQ-5gs" customClass="NoneNavigationBarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Is3-3o-sgR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hc5-kl-wqa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qlj-X2-fX3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VN1-Yx-sH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qQg-Sv-CO0">
@@ -42,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2na-VQ-FUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="68"/>
+            <point key="canvasLocation" x="-362" y="68"/>
         </scene>
     </scenes>
 </document>

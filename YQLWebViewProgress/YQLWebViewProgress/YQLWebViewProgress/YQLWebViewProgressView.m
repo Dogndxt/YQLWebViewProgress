@@ -61,9 +61,7 @@
     _animationDuration = 0.25f;
     _fadeAnimationDuration = 0.25f;
     _fadeOutAnimationDuration = 0.1f;
-    
 }
-
 
 
 /**
@@ -99,9 +97,7 @@
             _progressView.alpha = 1.0;
         } completion:nil];
     }
-    
 }
-
 
 
 @end

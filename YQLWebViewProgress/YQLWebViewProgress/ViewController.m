@@ -18,11 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    YQLWebView *webView = [[YQLWebView alloc] initWithFrame:self.view.bounds];
-    webView.urlStr = @"https://google.com/";
-    webView.progressColor = [UIColor redColor];
-    webView.progressHeight = 10.0;
-    [self.view addSubview:webView];
 }
 
 

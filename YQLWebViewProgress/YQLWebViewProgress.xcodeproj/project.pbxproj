@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C504BD4F1F03457E00947B80 /* HaveNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C504BD4E1F03457E00947B80 /* HaveNavigationBarViewController.m */; };
+		C504BD521F03459100947B80 /* NoneNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C504BD511F03459100947B80 /* NoneNavigationBarViewController.m */; };
 		C5328F801F01F48F0011F121 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5328F7F1F01F48F0011F121 /* main.m */; };
 		C5328F831F01F48F0011F121 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5328F821F01F48F0011F121 /* AppDelegate.m */; };
 		C5328F861F01F48F0011F121 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5328F851F01F48F0011F121 /* ViewController.m */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C504BD4D1F03457E00947B80 /* HaveNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaveNavigationBarViewController.h; sourceTree = "<group>"; };
+		C504BD4E1F03457E00947B80 /* HaveNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaveNavigationBarViewController.m; sourceTree = "<group>"; };
+		C504BD501F03459100947B80 /* NoneNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoneNavigationBarViewController.h; sourceTree = "<group>"; };
+		C504BD511F03459100947B80 /* NoneNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoneNavigationBarViewController.m; sourceTree = "<group>"; };
 		C5328F7B1F01F48F0011F121 /* YQLWebViewProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQLWebViewProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5328F7F1F01F48F0011F121 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5328F811F01F48F0011F121 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				C5328F821F01F48F0011F121 /* AppDelegate.m */,
 				C5328F841F01F48F0011F121 /* ViewController.h */,
 				C5328F851F01F48F0011F121 /* ViewController.m */,
+				C504BD4D1F03457E00947B80 /* HaveNavigationBarViewController.h */,
+				C504BD4E1F03457E00947B80 /* HaveNavigationBarViewController.m */,
+				C504BD501F03459100947B80 /* NoneNavigationBarViewController.h */,
+				C504BD511F03459100947B80 /* NoneNavigationBarViewController.m */,
 				C5328F871F01F48F0011F121 /* Main.storyboard */,
 				C5328F8A1F01F48F0011F121 /* Assets.xcassets */,
 				C5328F8C1F01F48F0011F121 /* LaunchScreen.storyboard */,
@@ -183,6 +193,7 @@
 				TargetAttributes = {
 					C5328F7A1F01F48F0011F121 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M2L8292B26;
 						ProvisioningStyle = Automatic;
 					};
 					C5328F931F01F4900011F121 = {
@@ -236,12 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C504BD521F03459100947B80 /* NoneNavigationBarViewController.m in Sources */,
 				C5328F861F01F48F0011F121 /* ViewController.m in Sources */,
 				C5328F831F01F48F0011F121 /* AppDelegate.m in Sources */,
 				C5328FAD1F0236C90011F121 /* YQLWebView.m in Sources */,
 				C5328FAA1F022C3F0011F121 /* YQLWebViewProgressView.m in Sources */,
 				C5328F801F01F48F0011F121 /* main.m in Sources */,
 				C5328FA71F01F51E0011F121 /* YQLWebViewProgress.m in Sources */,
+				C504BD4F1F03457E00947B80 /* HaveNavigationBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +390,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M2L8292B26;
 				INFOPLIST_FILE = YQLWebViewProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yql.YQLWebViewProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +403,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M2L8292B26;
 				INFOPLIST_FILE = YQLWebViewProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yql.YQLWebViewProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +455,7 @@
 				C5328F9F1F01F4900011F121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5328FA01F01F4900011F121 /* Build configuration list for PBXNativeTarget "YQLWebViewProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +464,7 @@
 				C5328FA21F01F4900011F121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

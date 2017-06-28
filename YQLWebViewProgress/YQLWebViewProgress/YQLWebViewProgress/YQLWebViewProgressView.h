@@ -25,9 +25,7 @@
 
 
 - (instancetype)initWithFrame:(CGRect)frame;
-
 - (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color;
- 
 
 - (void)setProgress:(double)progress animated:(BOOL)animated;
 
