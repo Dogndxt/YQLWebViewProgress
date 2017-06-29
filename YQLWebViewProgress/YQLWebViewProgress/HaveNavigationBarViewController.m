@@ -19,7 +19,7 @@
     [super viewWillAppear:animated];
     
     YQLWebView *webView = [[YQLWebView alloc] initWithFrame:self.view.bounds];
-    webView.urlStr = @"https://google.com/";
+    webView.urlStr = @"https://mp.weixin.qq.com/s/demzXh8CHggvRYFG3YSTDg";
 //    webView.progressColor = [UIColor redColor];
 //    webView.progressHeight = 10.0;
     [self.view addSubview:webView];

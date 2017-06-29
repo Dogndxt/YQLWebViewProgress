@@ -37,6 +37,11 @@
     return self;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self configure];
+}
+
 - (void)configure {
     _webViewProgress = [[YQLWebViewProgress alloc] init];
     self.delegate = _webViewProgress;
