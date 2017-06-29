@@ -11,18 +11,19 @@
 
 @interface HaveNavigationBarViewController ()
 
+@property (weak, nonatomic) IBOutlet YQLWebView *yqlWebView;
+
 @end
 
 @implementation HaveNavigationBarViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    YQLWebView *webView = [[YQLWebView alloc] initWithFrame:self.view.bounds];
-    webView.urlStr = @"https://mp.weixin.qq.com/s/demzXh8CHggvRYFG3YSTDg";
+
+    self.yqlWebView.urlStr = @"https://mp.weixin.qq.com/s/demzXh8CHggvRYFGDg";
 //    webView.progressColor = [UIColor redColor];
 //    webView.progressHeight = 10.0;
-    [self.view addSubview:webView];
+    [self.view addSubview:self.yqlWebView];
 }
 
 - (void)viewDidLoad {
