@@ -7,7 +7,7 @@
 //
 
 // github 地址： https://github.com/Dogndxt/YQLWebViewProgress
-// 欢迎大家交流学习，如果对您有帮助，希望给我找个项目点个 star ～，谢谢～
+// 欢迎大家交流学习，如果对您有帮助，希望给我这个项目点个 star ～，谢谢～
 
 
 #import "ViewController.h"
